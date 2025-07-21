@@ -1,0 +1,14 @@
+[project]
+name = "jeju-rag"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "accelerate>=1.9.0",
+    "chroma>=0.2.0",
+    "dotenv>=0.9.9",
+    "mcp[cli]>=1.12.0",
+    "streamlit>=1.47.0",
+    "transformers>=4.53.2",
+]
