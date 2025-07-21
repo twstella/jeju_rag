@@ -41,7 +41,7 @@ class MCPClient:
 적절할 경우 다음 형식으로 응답하세요: TOOL_CALL: <tool_name> <json_parameters>
 그 외에는 자연스럽게 대화형으로 응답하세요.
 
-{messages[0]}
+{query}
 어시스턴트:"""
 
         messages = [{"role":"user","content":prompt}]
