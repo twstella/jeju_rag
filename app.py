@@ -3,7 +3,7 @@ import asyncio
 from client.mcp_client import MCPClient
 
 st.set_page_config(page_title="Jeju MCP Chatbot", layout="centered")
-st.title(":robot_face: Jeju MCP Chatbot :desert_island:")
+st.title("Jeju MCP Chatbot :desert_island: ")
 
 if "client" not in st.session_state:
     st.session_state.client = MCPClient()
