@@ -15,10 +15,8 @@ class MCPClient:
         self.exit_stack = AsyncExitStack()
         model_name = "Qwen/Qwen3-1.7B"
         # self.generator = pipeline("text-generation", model=model_name, tokenizer=model_name, max_new_tokens=512)
-        self.model = AutoModelForCausalLM.from_pretrained(
-            model_name, torch_dtype="bfloat16", device_map="auto"
-        )
-        self.tokenizer = AutoTokenizer.from_pretrained(model_name)
+        # self.model = AutoModelForCausalLM.from_pretrained(model_name, torch_dtype="bfloat16", device_map="auto")
+        # self.tokenizer = AutoTokenizer.from_pretrained(model_name)
 
     async def connect_to_server(self, server_script_path: str):
         command = "python"
